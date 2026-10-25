@@ -1,0 +1,33 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #101116; color: #f5f5f5; font-family: Arial, sans-serif; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 22px 8%; background: #191a22; border-bottom: 2px solid #eab308; }
+header h1 { color: #facc15; font-size: 27px; }
+nav { display: flex; gap: 22px; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { color: #facc15; }
+.hero { text-align: center; padding: 65px 20px; background: linear-gradient(135deg, #25212d, #111827); }
+.hero h2 { font-size: clamp(27px, 5vw, 42px); color: #facc15; margin-bottom: 15px; }
+.hero p { color: #d1d5db; margin-bottom: 25px; }
+.btn { display: inline-block; padding: 12px 24px; background: #eab308; color: #111; text-decoration: none; border-radius: 6px; font-weight: bold; }
+.btn:hover { background: white; }
+main { padding: 40px 8%; }
+.section-title { text-align: center; margin-bottom: 30px; font-size: 30px; color: #facc15; }
+.movie-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+.card { background: #1d1e27; border-radius: 12px; overflow: hidden; border: 1px solid #343540; transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: translateY(-7px); box-shadow: 0 10px 25px #0008; }
+.card img { width: 100%; height: 320px; object-fit: cover; display: block; }
+.content { padding: 18px; }
+.content h3 { color: #facc15; margin-bottom: 10px; font-size: 21px; }
+.content p { color: #d1d5db; font-size: 13px; line-height: 1.7; margin-bottom: 9px; }
+.content .genre { color: #a5b4fc; }
+.content .rating { color: #facc15; font-size: 17px; font-weight: bold; }
+.content .review { border-top: 1px solid #393a44; padding-top: 10px; font-style: italic; }
+footer { text-align: center; background: #191a22; padding: 22px; color: #bfc0ca; font-size: 13px; }
+@media (max-width: 600px) {
+    header { flex-direction: column; gap: 18px; }
+    nav { gap: 16px; }
+    main { padding: 30px 5%; }
+    .card img { height: 350px; }
+}
+

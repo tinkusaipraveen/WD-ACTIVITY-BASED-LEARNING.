@@ -1,0 +1,35 @@
+```css
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f4f1e8; color: #26382b; }
+header { background: #173d2b; color: white; padding: 20px 8%; display: flex; justify-content: space-between; align-items: center; }
+header h1 { color: #d6e8b5; }
+nav { display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { color: #c6e69a; }
+.hero { min-height: 390px; background: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600') center/cover; }
+.overlay { min-height: 390px; background: linear-gradient(90deg, #10291bdc, #10291b30); color: white; padding: 110px 9%; }
+.overlay h2 { font-size: clamp(32px, 5vw, 50px); margin-bottom: 15px; }
+.overlay p { margin-bottom: 25px; }
+.btn { background: #d6e8b5; color: #173d2b; padding: 13px 22px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+main { padding: 40px 8%; }
+.title { text-align: center; margin-bottom: 30px; font-size: 30px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
+.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px #26382b20; transition: .3s; }
+.card:hover { transform: translateY(-7px); box-shadow: 0 12px 25px #26382b35; }
+.card img { width: 100%; height: 210px; object-fit: cover; }
+.info { padding: 20px; }
+.info h3 { color: #23613e; margin-bottom: 12px; }
+.info p { margin: 9px 0; line-height: 1.5; font-size: 14px; }
+.info h4 { color: #a65b24; margin-top: 14px; font-size: 18px; }
+.panel { background: white; padding: 25px; border-left: 5px solid #48845b; border-radius: 8px; margin-top: 30px; box-shadow: 0 4px 12px #0000000d; }
+.panel h2 { margin-bottom: 15px; color: #23613e; }
+.panel p { margin: 11px 0; line-height: 1.5; }
+.columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+.safety { border-color: #d18b36; }
+footer { background: #173d2b; color: white; text-align: center; padding: 28px; line-height: 1.8; }
+@media (max-width: 600px) {
+    header { flex-direction: column; gap: 18px; }
+    nav { flex-wrap: wrap; justify-content: center; gap: 14px; }
+    main { padding: 30px 5%; }
+    .overlay { padding: 100px 7%; }
+}
